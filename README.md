@@ -43,13 +43,14 @@ Não é preciso baixar manualmente o cifar-10-batches-py/ — isto ocorre no pr�
 Em cada um dos arquivos existe a célula abaixo:
 from torchvision import datasets, transforms
 
-transform = transforms.Compose([
-    transforms.ToTensor(),
-])
+```python
+from torchvision import datasets, transforms
 
-train_data = datasets.CIFAR10(root='data', train=True, download=True, transform=transform)
-test_data = datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
+transform = transforms.ToTensor()
 
+# Faz o download automático do CIFAR-10 e extrai na pasta 'data/'
+datasets.CIFAR10(root='data', train=True, download=True, transform=transform)
+datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
 
 ```
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
