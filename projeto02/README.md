@@ -36,7 +36,7 @@ TrabalhoFinal_Parte1/
 
 ## Dataset
 
-Utilizamos o **CIFAR-10**, que contém 60.000 imagens coloridas 32x32 distribuídas em 10 classes:
+Foi utilizado o **CIFAR-10**, que contém 60.000 imagens coloridas 32x32 distribuídas em 10 classes:
 
 Não é preciso baixar manualmente o cifar-10-batches-py/
 isto ocorre no próprio código em PyTorch que faz isso automaticamente ao rodar os notebooks.
