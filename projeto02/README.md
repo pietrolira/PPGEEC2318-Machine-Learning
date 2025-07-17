@@ -29,7 +29,7 @@ TrabalhoFinal_Parte1/
 | `01`     | Modelo Base       | CNN simples com 2 convoluções + FC             |
 | `02`     | Modelo n_features | Aumento de filtros (nf1/nf2)                   |
 | `03`     | Modelo Blocos     | CNN com blocos modulares (Conv+BN+ReLU+Pool)   |
-| `04`     | Seu Modelo        | CNN personalizada com Dropout e BatchNorm      |
+| `04`     | Modelo Personalizado        | CNN personalizada com Dropout e BatchNorm      |
 | `05`     | Análise Comparativa | Comparação gráfica entre os 4 modelos       |
 
 ---
@@ -87,13 +87,13 @@ datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
 
 ---
 
-### 04_SeuModelo.ipynb
+### 04_ModeloPersonalizado.ipynb
 
 **Matriz de Confusão**  
-![Matriz Seu Modelo](Graficos/4matriz_de_confusao.png)
+![Matriz Modelo_Personalizado](Graficos/4matriz_de_confusao.png)
 
 **Gráfico Acurácia e Loss**  
-![Gráfico Seu Modelo](Graficos/4graficos.png)
+![Gráfico Modelo_Personalizado](Graficos/4graficos.png)
 
 ---
 
