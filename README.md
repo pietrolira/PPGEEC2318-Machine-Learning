@@ -38,10 +38,10 @@ TrabalhoFinal_Parte1/
 
 Utilizamos o **CIFAR-10**, que contém 60.000 imagens coloridas 32x32 distribuídas em 10 classes:
 
-Não é preciso baixar manualmente o cifar-10-batches-py/ — isto ocorre no próprio código em PyTorch que faz isso automaticamente ao rodar os notebooks.
+Não é preciso baixar manualmente o cifar-10-batches-py/
+isto ocorre no próprio código em PyTorch que faz isso automaticamente ao rodar os notebooks.
 
 Em cada um dos arquivos existe a célula abaixo:
-from torchvision import datasets, transforms
 
 ```python
 from torchvision import datasets, transforms
