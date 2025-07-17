@@ -1,21 +1,20 @@
+# PPGEEC2318-Machine-Learning
+Projetos da disciplina Aprendizado de máquina do mestrado PPGEEC2318/UFRN
 
-# 🧠 Classificação Multiclasse com CNNs - CIFAR-10
+
+# Classificação Multiclasse com CNNs - CIFAR-10
 
 Este projeto faz parte do **Trabalho Final (Parte 1)** da disciplina de Aprendizado de Máquina do PPgEEC.  
 O objetivo foi desenvolver, testar e comparar diferentes arquiteturas de redes neurais convolucionais (CNNs) aplicadas à tarefa de **classificação multiclasse com o dataset CIFAR-10**.
 
 ---
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 TrabalhoFinal_Parte1/
-├── data/                  # Dataset CIFAR-10
 ├── models/                # Arquiteturas de CNN
 ├── notebooks/             # Notebooks com experimentos
-├── outputs/               # Gráficos e matrizes de confusão
-│   ├── confusion_matrix/
-│   └── graficos/
 ├── utils/                 # Funções auxiliares (train, test, métricas)
 ├── requirements.txt
 └── README.md
@@ -23,7 +22,7 @@ TrabalhoFinal_Parte1/
 
 ---
 
-## 📚 Modelos Testados
+## Modelos Testados
 
 | Notebook | Modelo            | Descrição                                       |
 |----------|-------------------|-------------------------------------------------|
@@ -35,9 +34,23 @@ TrabalhoFinal_Parte1/
 
 ---
 
-## 🔎 Dataset
+## Dataset
 
 Utilizamos o **CIFAR-10**, que contém 60.000 imagens coloridas 32x32 distribuídas em 10 classes:
+
+Não é preciso baixar manualmente o cifar-10-batches-py/
+isto ocorre no próprio código em PyTorch que faz isso automaticamente ao rodar os notebooks.
+
+Em cada um dos arquivos existe a célula abaixo:
+
+```python
+from torchvision import datasets, transforms
+
+transform = transforms.ToTensor()
+
+# Faz o download automático do CIFAR-10 e extrai na pasta 'data/'
+datasets.CIFAR10(root='data', train=True, download=True, transform=transform)
+datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
 
 ```
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
@@ -45,83 +58,62 @@ airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
 
 ---
 
-## 📊 Resultados por Modelo
+## Resultados por Modelo
 
-### 📘 01_ModeloBase.ipynb
+### 01_ModeloBase.ipynb
 
-**📌 Matriz de Confusão**  
-![Matriz Base](outputs/confusion_matrix/modelo_base_cm.png)
+**Matriz de Confusão**  
+![Matriz Base](graficos/1matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
-![Gráfico Base](outputs/graficos/modelo_base_acc_loss.png)
-
----
-
-### 📘 02_ModeloNFeatures.ipynb
-
-**📌 Matriz de Confusão**  
-![Matriz n_features](outputs/confusion_matrix/modelo_nfeatures_cm.png)
-
-**📌 Gráfico Acurácia e Loss**  
-![Gráfico n_features](outputs/graficos/modelo_nfeatures_acc_loss.png)
+**Gráfico Acurácia e Loss**  
+![Gráfico Base](graficos/1graficos.png)
 
 ---
 
-### 📘 03_ModeloBlocos.ipynb
+### 02_ModeloNFeatures.ipynb
 
-**📌 Matriz de Confusão**  
-![Matriz Blocos](outputs/confusion_matrix/modelo_blocos_cm.png)
+**Matriz de Confusão**  
+![Matriz n_features](graficos/2matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
-![Gráfico Blocos](outputs/graficos/modelo_blocos_acc_loss.png)
-
----
-
-### 📘 04_SeuModelo.ipynb
-
-**📌 Matriz de Confusão**  
-![Matriz Seu Modelo](outputs/confusion_matrix/seu_modelo_cm.png)
-
-**📌 Gráfico Acurácia e Loss**  
-![Gráfico Seu Modelo](outputs/graficos/seu_modelo_acc_loss.png)
+**Gráfico Acurácia e Loss**  
+![Gráfico n_features](graficos/2graficos.png)
 
 ---
 
-## 📈 Comparação Final (05_AnaliseComparativa.ipynb)
+### 03_ModeloBlocos.ipynb
 
-**🔁 Acurácia no Teste**  
-![Comparativo Acurácia](outputs/graficos/comparativo_acc_teste.png)
+**Matriz de Confusão**  
+![Matriz Blocos](graficos/3matriz_de_confusao.png)
 
-**🔁 Loss no Teste**  
-![Comparativo Loss](outputs/graficos/comparativo_loss_teste.png)
-
----
-
-## 🚀 Como Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/TrabalhoFinal_Parte1.git
-   cd TrabalhoFinal_Parte1
-   ```
-
-2. Instale os requisitos:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Execute os notebooks com o Jupyter ou dentro do VS Code.
+**Gráfico Acurácia e Loss**  
+![Gráfico Blocos](graficos/3graficos.png)
 
 ---
 
-## ✍️ Autor
+### 04_SeuModelo.ipynb
+
+**Matriz de Confusão**  
+![Matriz Seu Modelo](graficos/4matriz_de_confusao.png)
+
+**Gráfico Acurácia e Loss**  
+![Gráfico Seu Modelo](graficos/4graficos.png)
+
+---
+
+## Comparação Final (05_AnaliseComparativa.ipynb)
+
+**Acurácia no Teste**  
+![Comparativo Acurácia](graficos/5_grafico_comparativo_1.png)
+
+**Loss no Teste**  
+![Comparativo Loss](graficos/5_grafico_comparativo_2.png)
+
+---
+
+## Autor
 
 - **Pietro Augusto de Albuquerque Lira e Silva**
 - [pietrolira.com.br](https://pietrolira.com.br)
 - Mestrando em Engenharia Elétrica e da Computação (PPgEEC/UFRN)
 
 ---
-
-## 🧾 Licença
-
-Este projeto é de uso acadêmico e educacional.
