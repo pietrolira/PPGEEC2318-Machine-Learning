@@ -53,9 +53,6 @@ datasets.CIFAR10(root='data', train=True, download=True, transform=transform)
 datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
 
 ```
-airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
-```
-
 ---
 
 ## Resultados por Modelo
