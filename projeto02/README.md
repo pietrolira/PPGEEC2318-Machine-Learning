@@ -60,50 +60,50 @@ datasets.CIFAR10(root='data', train=False, download=True, transform=transform)
 ### 01_ModeloBase.ipynb
 
 **Matriz de Confusão**  
-![Matriz Base](graficos/1matriz_de_confusao.png)
+![Matriz Base](Graficos/1matriz_de_confusao.png)
 
 **Gráfico Acurácia e Loss**  
-![Gráfico Base](graficos/1graficos.png)
+![Gráfico Base](Graficos/1graficos.png)
 
 ---
 
 ### 02_ModeloNFeatures.ipynb
 
 **Matriz de Confusão**  
-![Matriz n_features](graficos/2matriz_de_confusao.png)
+![Matriz n_features](Graficos/2matriz_de_confusao.png)
 
 **Gráfico Acurácia e Loss**  
-![Gráfico n_features](graficos/2graficos.png)
+![Gráfico n_features](Graficos/2graficos.png)
 
 ---
 
 ### 03_ModeloBlocos.ipynb
 
 **Matriz de Confusão**  
-![Matriz Blocos](graficos/3matriz_de_confusao.png)
+![Matriz Blocos](Graficos/3matriz_de_confusao.png)
 
 **Gráfico Acurácia e Loss**  
-![Gráfico Blocos](graficos/3graficos.png)
+![Gráfico Blocos](Graficos/3graficos.png)
 
 ---
 
 ### 04_SeuModelo.ipynb
 
 **Matriz de Confusão**  
-![Matriz Seu Modelo](graficos/4matriz_de_confusao.png)
+![Matriz Seu Modelo](Graficos/4matriz_de_confusao.png)
 
 **Gráfico Acurácia e Loss**  
-![Gráfico Seu Modelo](graficos/4graficos.png)
+![Gráfico Seu Modelo](Graficos/4graficos.png)
 
 ---
 
 ## Comparação Final (05_AnaliseComparativa.ipynb)
 
 **Acurácia no Teste**  
-![Comparativo Acurácia](graficos/5_grafico_comparativo_1.png)
+![Comparativo Acurácia](Graficos/5_grafico_comparativo_1.png)
 
 **Loss no Teste**  
-![Comparativo Loss](graficos/5_grafico_comparativo_2.png)
+![Comparativo Loss](Graficos/5_grafico_comparativo_2.png)
 
 ---
 
