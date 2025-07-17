@@ -2,14 +2,14 @@
 Projetos da disciplina Aprendizado de máquina do mestrado PPGEEC2318/UFRN
 
 
-# 🧠 Classificação Multiclasse com CNNs - CIFAR-10
+# Classificação Multiclasse com CNNs - CIFAR-10
 
 Este projeto faz parte do **Trabalho Final (Parte 1)** da disciplina de Aprendizado de Máquina do PPgEEC.  
 O objetivo foi desenvolver, testar e comparar diferentes arquiteturas de redes neurais convolucionais (CNNs) aplicadas à tarefa de **classificação multiclasse com o dataset CIFAR-10**.
 
 ---
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 TrabalhoFinal_Parte1/
@@ -22,7 +22,7 @@ TrabalhoFinal_Parte1/
 
 ---
 
-## 📚 Modelos Testados
+## Modelos Testados
 
 | Notebook | Modelo            | Descrição                                       |
 |----------|-------------------|-------------------------------------------------|
@@ -34,7 +34,7 @@ TrabalhoFinal_Parte1/
 
 ---
 
-## 🔎 Dataset
+## Dataset
 
 Utilizamos o **CIFAR-10**, que contém 60.000 imagens coloridas 32x32 distribuídas em 10 classes:
 
@@ -57,59 +57,59 @@ airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
 
 ---
 
-## 📊 Resultados por Modelo
+## Resultados por Modelo
 
-### 📘 01_ModeloBase.ipynb
+### 01_ModeloBase.ipynb
 
-**📌 Matriz de Confusão**  
+**Matriz de Confusão**  
 ![Matriz Base](graficos/1matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
+**Gráfico Acurácia e Loss**  
 ![Gráfico Base](graficos/1graficos.png)
 
 ---
 
-### 📘 02_ModeloNFeatures.ipynb
+### 02_ModeloNFeatures.ipynb
 
-**📌 Matriz de Confusão**  
+**Matriz de Confusão**  
 ![Matriz n_features](graficos/2matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
+**Gráfico Acurácia e Loss**  
 ![Gráfico n_features](graficos/2graficos.png)
 
 ---
 
-### 📘 03_ModeloBlocos.ipynb
+### 03_ModeloBlocos.ipynb
 
-**📌 Matriz de Confusão**  
+**Matriz de Confusão**  
 ![Matriz Blocos](graficos/3matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
+**Gráfico Acurácia e Loss**  
 ![Gráfico Blocos](graficos/3graficos.png)
 
 ---
 
-### 📘 04_SeuModelo.ipynb
+### 04_SeuModelo.ipynb
 
-**📌 Matriz de Confusão**  
+**Matriz de Confusão**  
 ![Matriz Seu Modelo](graficos/4matriz_de_confusao.png)
 
-**📌 Gráfico Acurácia e Loss**  
+**Gráfico Acurácia e Loss**  
 ![Gráfico Seu Modelo](graficos/4graficos.png)
 
 ---
 
-## 📈 Comparação Final (05_AnaliseComparativa.ipynb)
+## Comparação Final (05_AnaliseComparativa.ipynb)
 
-**🔁 Acurácia no Teste**  
+**Acurácia no Teste**  
 ![Comparativo Acurácia](graficos/5_grafico_comparativo_1.png)
 
-**🔁 Loss no Teste**  
+**Loss no Teste**  
 ![Comparativo Loss](graficos/5_grafico_comparativo_2.png)
 
 ---
 
-## ✍️ Autor
+## Autor
 
 - **Pietro Augusto de Albuquerque Lira e Silva**
 - [pietrolira.com.br](https://pietrolira.com.br)
