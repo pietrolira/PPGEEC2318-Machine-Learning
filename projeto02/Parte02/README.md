@@ -5,8 +5,11 @@ Classificação com variação utilizando learning rate
 Resultados:
 
 Results summary
+
 Results in /temp/modelo_base_tuner
+
 Showing 10 best trials
+
 Objective(name="val_accuracy", direction="max")
 
 Trial 04 summary
